@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <net.seip.botwatch.BluetoothDevicePreference
+    android:key="pref_mac"
+    android:title="@string/pref_mac"
+    android:summary=""
+    android:defaultValue="00:16:53:19:FC:82"
+    android:entries="@array/empty_listentries"
+    android:entryValues="@array/empty_listvalues"
+    />
+
+    <net.seip.botwatch.ListPreferenceWithSummary
+        android:key="pref_type"
+        android:title="@string/pref_type"
+        android:summary="Shooterbot"
+        android:defaultValue="Shooterbot"
+        android:entries="@array/type_listentries"
+        android:entryValues="@array/type_listvalues"
+        />
+
+    <net.seip.botwatch.EditTextPreferenceWithSummary
+        android:key="pref_program_1"
+        android:title="@string/pref_program_1"
+        android:defaultValue=""
+        />
+
+    <net.seip.botwatch.EditTextPreferenceWithSummary
+        android:key="pref_program_2"
+        android:title="@string/pref_program_2"
+        android:defaultValue=""
+        />
+
+
+</PreferenceScreen>

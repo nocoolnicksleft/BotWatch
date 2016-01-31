@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Botwatch</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="connecting">Verbinden</string>
+    <string name="couldnotconnect">Roboter nicht gefunden</string>
+    <string name="error">Fehler</string>
+    <string name="no_paired_nxt">no_paired_nxt</string>
+    <string name="pairing_message">pairing_message</string>
+    <string name="problem_at_closing">problem_at_closing</string>
+    <string name="searchingforrobot">Roboter suchen</string>
+    <string name="settings">Einstellungen</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="ok">OK</string>
+    <string name="pref_mac">Adresse</string>
+    <string name="pref_program_1">Programm 1</string>
+    <string name="pref_program_2">Programm 2</string>
+    <string name="pref_program_3">Programm 3</string>
+    <string name="pref_speed_straight">Geschwindigkeit geradeaus</string>
+    <string name="pref_speed_turn">Geschwindigkeit Kurven</string>
+    <string name="pref_type">Roboter-Typ</string>
+    <string name="noneselected">Nicht ausgewählt</string>
+</resources>

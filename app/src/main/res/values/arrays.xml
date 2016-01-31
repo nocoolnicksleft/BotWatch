@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type_listentries">
+        <item>Shooterbot</item>
+        <item>Drivebot</item>
+    </string-array>
+    <string-array name="type_listvalues">
+        <item>Shooterbot</item>
+        <item>Drivebot</item>
+    </string-array>
+    <string-array name="speed_listentries">
+        <item>20</item>
+        <item>40</item>
+        <item>60</item>
+        <item>80</item>
+        <item>100</item>
+    </string-array>
+    <string-array name="speed_listvalues">
+        <item>20</item>
+        <item>40</item>
+        <item>60</item>
+        <item>80</item>
+        <item>100</item>
+    </string-array>
+    <string-array name="empty_listentries">
+        <item>(none selected)</item>
+    </string-array>
+    <string-array name="empty_listvalues">
+        <item>0</item>
+    </string-array>
+
+</resources>

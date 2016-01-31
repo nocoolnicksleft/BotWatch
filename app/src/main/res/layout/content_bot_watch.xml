@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/main"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="net.seip.botwatch.BotWatch"
+    tools:showIn="@layout/activity_bot_watch">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonPower"
+        android:src="@drawable/ic_bic_power_red"
+        android:background="?android:selectableItemBackground"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLight"
+        android:src="@drawable/btn_light"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="Set light color"
+        android:layout_below="@+id/buttonPower"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonBeedo"
+        android:src="@drawable/btn_speaker"
+        android:background="?android:selectableItemBackground"
+        android:layout_below="@+id/buttonPower"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonTrigger"
+        android:background="?android:selectableItemBackground"
+        android:src="@drawable/btn_trigger"
+        android:layout_below="@+id/buttonPower"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonForward"
+        android:contextClickable="true"
+        android:minHeight="30dp"
+        android:minWidth="30dp"
+        android:baselineAlignBottom="true"
+        android:padding="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        android:alpha="100"
+        android:nestedScrollingEnabled="true"
+        android:src="@drawable/btn_up"
+        android:background="?android:selectableItemBackground"
+        android:layout_below="@+id/buttonPower"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLeft"
+        android:contextClickable="true"
+        android:minHeight="30dp"
+        android:minWidth="30dp"
+        android:baselineAlignBottom="true"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        android:alpha="100"
+        android:nestedScrollingEnabled="true"
+        android:src="@drawable/btn_left"
+        android:hapticFeedbackEnabled="true"
+        android:background="?android:selectableItemBackground"
+        android:layout_below="@+id/buttonForward"
+        android:layout_toLeftOf="@+id/buttonForward"
+        android:layout_toStartOf="@+id/buttonForward"
+        android:elevation="42dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonRight"
+        android:contextClickable="true"
+        android:minHeight="30dp"
+        android:minWidth="30dp"
+        android:baselineAlignBottom="true"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        android:alpha="100"
+        android:nestedScrollingEnabled="true"
+        android:src="@drawable/btn_right"
+        android:background="?android:selectableItemBackground"
+        android:layout_below="@+id/buttonForward"
+        android:layout_toRightOf="@+id/buttonForward"
+        android:layout_toEndOf="@+id/buttonForward" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonBack"
+        android:contextClickable="true"
+        android:minHeight="30dp"
+        android:minWidth="30dp"
+        android:baselineAlignBottom="true"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        android:alpha="100"
+        android:nestedScrollingEnabled="true"
+        android:src="@drawable/btn_down"
+        android:hapticFeedbackEnabled="false"
+        android:background="?android:selectableItemBackground"
+        android:layout_below="@+id/buttonLeft"
+        android:layout_toRightOf="@+id/buttonLeft"
+        android:layout_toEndOf="@+id/buttonLeft" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonStop"
+        android:src="@drawable/btn_stop"
+        android:background="?android:selectableItemBackground"
+        android:layout_below="@+id/buttonForward"
+        android:layout_toRightOf="@+id/buttonLeft"
+        android:layout_toEndOf="@+id/buttonLeft" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSettings"
+        android:src="@drawable/ic_bic_gear_2"
+        android:background="?android:selectableItemBackground"
+        android:layout_above="@+id/buttonBeedo"
+        android:layout_alignLeft="@+id/buttonBeedo"
+        android:layout_alignStart="@+id/buttonBeedo" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSpeed"
+        android:src="@drawable/ic_bic_button_red_cat"
+        android:background="?android:selectableItemBackground"
+        android:layout_above="@+id/buttonTrigger"
+        android:layout_alignLeft="@+id/buttonTrigger"
+        android:layout_alignStart="@+id/buttonTrigger" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonProgram1"
+        android:src="@drawable/btn_run"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="Set light color"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/buttonLight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonProgram2"
+        android:src="@drawable/btn_run"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="Set light color"
+        android:layout_below="@+id/buttonTrigger"
+        android:layout_alignTop="@+id/buttonProgram1"
+        android:layout_alignParentLeft="@+id/buttonTrigger"
+        android:layout_alignRight="@+id/buttonTrigger" />
+
+</RelativeLayout>
