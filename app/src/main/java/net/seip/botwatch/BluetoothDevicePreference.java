@@ -14,28 +14,35 @@ public class BluetoothDevicePreference extends ListPreferenceWithSummary {
 
         int LegoDevicesFound = 0;
 
-        BluetoothAdapter bta = BluetoothAdapter.getDefaultAdapter();
-        Set<BluetoothDevice> pairedDevices = bta.getBondedDevices();
+        try {
 
-        for (BluetoothDevice dev : pairedDevices) {
-            if (dev.getAddress().startsWith(BTCommunicator.OUI_LEGO)) {
-                LegoDevicesFound++;
-            }
-        }
+            BluetoothAdapter bta = BluetoothAdapter.getDefaultAdapter();
 
-        if (LegoDevicesFound > 0) {
-            CharSequence[] entries = new CharSequence[LegoDevicesFound];
-            CharSequence[] entryValues = new CharSequence[LegoDevicesFound];
-            int i = 0;
+            Set<BluetoothDevice> pairedDevices = bta.getBondedDevices();
+
             for (BluetoothDevice dev : pairedDevices) {
-                if (dev.getAddress().startsWith(BTCommunicator.OUI_LEGO)) {
-                    entries[i] = dev.getName() + " " + dev.getAddress();
-                    entryValues[i] = dev.getAddress();
-                    i++;
+                if (dev.getAddress().startsWith(BotWatch.OUI_LEGO)) {
+                    LegoDevicesFound++;
                 }
             }
-            setEntries(entries);
-            setEntryValues(entryValues);
+
+            if (LegoDevicesFound > 0) {
+                CharSequence[] entries = new CharSequence[LegoDevicesFound];
+                CharSequence[] entryValues = new CharSequence[LegoDevicesFound];
+                int i = 0;
+                for (BluetoothDevice dev : pairedDevices) {
+                    if (dev.getAddress().startsWith(BotWatch.OUI_LEGO)) {
+                        entries[i] = dev.getName() + " " + dev.getAddress();
+                        entryValues[i] = dev.getAddress();
+                        i++;
+                    }
+                }
+                setEntries(entries);
+                setEntryValues(entryValues);
+            }
+        }
+        catch (NullPointerException e) {
+
         }
     }
 
