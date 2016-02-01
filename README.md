@@ -22,6 +22,8 @@ You need to pair the NXT in the bluetooth section of the system settings in orde
 
 When entering the custom program names don't forget to add the file extension.
 
+I don't have any plans to do further development on this right now. I might add some display of sensor input some day. 
+
 ###Credits
 
 I studied the [MINDdroid project](https://github.com/NXT/LEGO-MINDSTORMS-MINDdroid) to learn and used their LCPMessage class for generating commands.
